@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) { task1(); task2(); task3(); task4(); task5(); task6(); task7(); }
+    public static void main(String[] args) { task1(); task2(); task3(); task4(); task5(); task6(); task7(); task8(); task9(); }
         public static void task1() {
             System.out.println("Homework5");
             //Задание 1.1
@@ -58,4 +58,27 @@ public class Main {
             System.out.println(i);
         }
     }
-   }
+    public static void task8() {
+        //Задание 3.1
+        System.out.println(" ");
+        System.out.println("Задание 3.1");
+        int monthlySavings = 29000;
+        int yearSavings = 0;
+        for(int i = 1; i <= 12; i++) {
+            yearSavings = yearSavings + monthlySavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + yearSavings + " рублей");
+        }
+    }
+    public static void task9() {
+        //Задание 3.2
+        System.out.println(" ");
+        System.out.println("Задание 3.2");
+        int monthlySavings = 29000;
+        int yearSavings = 0;
+        for(int i = 1; i <= 12; i++) {
+            yearSavings = yearSavings + yearSavings/100;
+            yearSavings = yearSavings + monthlySavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + yearSavings + " рублей");
+        }
+    }
+}
